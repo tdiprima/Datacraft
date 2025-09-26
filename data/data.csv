@@ -1,0 +1,5 @@
+Ugly Column Name,age,x,y,useless_col
+1.0,25.0,10,5,junk
+2.0,35.0,20,15,junk
+,,30,25,junk
+4.0,45.0,40,35,junk
