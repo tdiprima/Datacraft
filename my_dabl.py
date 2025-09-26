@@ -1,9 +1,7 @@
 # https://pypi.org/project/dabl/
 import dabl
-import pandas as pd
+import pandas as pd  # Completed: Added pandas import
 
-dataframe = dabl.datasets.load_iris()
-# dataframe = pd.read_csv("data/your_data.csv")
-target_col = 'target'
-
-dabl.plot(dataframe, target_col)
+# Sample usage with generated 'your_data.csv'
+dataframe = pd.read_csv('data/your_data.csv')
+dabl.plot(dataframe, target_col='sales')
