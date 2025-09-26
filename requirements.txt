@@ -1,0 +1,32 @@
+# Use Python 3.9
+pandas==1.5.3
+
+# Tools for cleaning pandas DataFrames
+pyjanitor==0.31.0
+
+# Data Analysis Baseline Library
+dabl==0.3.2
+
+# Out-of-Core DataFrames to visualize and explore big tabular datasets
+vaex==4.17.0
+
+# An abstraction layer for distributed computation
+fugue==0.9.1
+
+# A pandas-based library to visualize and compare datasets.
+sweetviz==2.3.1
+
+# Build animated charts in Jupyter Notebook and similar environments with a simple Python syntax.
+ipyvizzu==0.18.0
+
+# A Python API for Intelligent Data Discovery
+lux-api==0.5.1
+
+# Pingouin: statistical package for Python
+pingouin==0.5.5
+
+# Automatically Visualize any dataset, any size with a single line of code
+autoviz==0.1.732
+
+# bamboolib - a GUI for pandas
+bamboolib==1.30.19
