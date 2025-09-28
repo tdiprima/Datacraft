@@ -1,5 +1,7 @@
 # Use Python 3.9
 pandas==1.5.3
+#pandas>=1.1.0,<2.0.0
+#pandas<3.0.0,>=2.1.0
 
 # Tools for cleaning pandas DataFrames
 pyjanitor==0.31.0
@@ -30,3 +32,14 @@ autoviz==0.1.732
 
 # bamboolib - a GUI for pandas
 bamboolib==1.30.19
+
+# Visualization (Python 3.11+)
+pywaffle
+matplotlib
+plotnine
+datashader
+joypy
+sankeyview
+pycirclize
+weave
+cudf
