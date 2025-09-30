@@ -34,12 +34,12 @@ autoviz==0.1.732
 bamboolib==1.30.19
 
 # Visualization (Python 3.11+)
-pywaffle
-matplotlib
-plotnine
-datashader
-joypy
-sankeyview
-pycirclize
-weave
-cudf
+pywaffle==1.1.1
+matplotlib==3.9.4
+plotnine==0.13.6
+datashader==0.17.0
+joypy==0.2.6
+sankeyview==1.1.8
+pycirclize==1.10.0
+weave==0.51.56
+cudf==0.6.1
