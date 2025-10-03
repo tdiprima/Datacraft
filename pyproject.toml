@@ -1,5 +1,5 @@
 [project]
-name = "explore-all-the-libs"
+name = "python-data-pantry"
 version = "0.1.0"
 description = "Python Libraries That Handle Big Data and Visualization"
 readme = "README.md"
