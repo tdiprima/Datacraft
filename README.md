@@ -1,81 +1,156 @@
-### Tools for cleaning pandas DataFrames
-https://github.com/pyjanitor-devs/pyjanitor
+## 🧰 Handy Python Libraries for Data Cleaning & Exploration
 
-**PyJanitor** 🧹 Cleans messy dataframes easily, like a friendly Pandas upgrade.
-  
-* Key perk: Chain simple methods to rename, drop empties, or filter.  
-* Tip: `df.clean_names().remove_empty()` – no more endless code!
+A curated list of Python tools that make working with Pandas and large datasets way easier — whether you're cleaning messy data, doing quick EDA, or scaling up to big data.
 
-### Data Analysis Baseline Library
-https://github.com/dabl/dabl
+---
 
-**Dabl** 📊 Auto-analyzes data for lazy exploration.
+### 🧹 PyJanitor — Clean Pandas DataFrames Effortlessly
 
-* Key perk: Plots visuals, preps data, and suggests models instantly.  
-* Tip: `dabl.plot(df, target_col)` – quick EDA without thinking hard. 
+👉 [github.com/pyjanitor-devs/pyjanitor](https://github.com/pyjanitor-devs/pyjanitor)
 
-### Out-of-Core DataFrames to visualize and explore big tabular datasets
-https://www.github.com/vaexio/vaex
+PyJanitor extends Pandas with a simple, chainable API for cleaning messy data.
 
-**Vaex** ⚡ Handles huge datasets (billions of rows) super fast on your laptop.
+* **Perk:** Rename columns, drop empties, or filter with one-liners.
+* **Try:**
 
-* Key perk: Lazy loading, no memory crashes for big files.  
-* Tip: `df = vaex.open('bigfile.csv'); df[df.x > 0].mean(df.y)` – explore 10GB data easily. 
+  ```python
+  df.clean_names().remove_empty()
+  ```
 
-### An abstraction layer for distributed computation
-http://github.com/fugue-project/fugue
+---
 
-**Fugue** 🔗 Mixes SQL, Pandas, and Spark without rewriting code.
+### 📊 Dabl — Baseline Data Analysis
 
-* Key perk: Applies custom functions across local or big-data setups.  
-* Tip: Use `transform(df, custom_logic)` – seamless for any scale.  
+👉 [github.com/dabl/dabl](https://github.com/dabl/dabl)
 
-### A pandas-based library to visualize and compare datasets.
-https://github.com/fbdesignpro/sweetviz
+Dabl automates exploratory data analysis and quick modeling.
 
-**Sweetviz** 📈 Creates instant, interactive HTML reports on your data.
-  
-* Key perk: Compares datasets, spots patterns with zero effort.  
-* Tip: `sweetviz.compare([df_train, "Train"], [df_test, "Test"])` – open in browser for insights.
+* **Perk:** Generates plots, preps data, and suggests models instantly.
+* **Try:**
 
-### Build animated charts in Jupyter Notebook and similar environments with a simple Python syntax.
-https://ipyvizzu.vizzuhq.com
+  ```python
+  dabl.plot(df, target_col)
+  ```
 
-**Ipyvizzu** 🎥 Makes animated charts in Jupyter for storytelling.
+---
 
-* Key perk: Animates data changes over time, great for presentations.  
-* Tip: `chart.animate(Config({"x": "year", "y": "sales"}))` – impress non-tech folks!
+### ⚡ Vaex — Out-of-Core DataFrames for Big Data
 
-### A Python API for Intelligent Data Discovery
-https://github.com/lux-org/lux
+👉 [github.com/vaexio/vaex](https://www.github.com/vaexio/vaex)
 
-**Lux** 🔍 Auto-suggests smart charts right in your Pandas dataframe.
+Vaex handles **billions** of rows fast, all on your laptop.
 
-* Key perk: Generates insights and visuals with no extra code.  
-* Tip: Just load `df` in a notebook – it toggles on magic views.
+* **Perk:** Lazy loading means no memory crashes on huge files.
+* **Try:**
 
-### Pingouin: statistical package for Python
-https://pingouin-stats.org/index.html
+  ```python
+  df = vaex.open("bigfile.csv")
+  df[df.x > 0].mean(df.y)
+  ```
 
-**Pingouin** 📉 Simple stats tests like t-tests or ANOVA, in clean tables.
+---
 
-* Key perk: Unified, easy API – less clunky than scipy.  
-* Tip: `pg.ttest(dv1, dv2, paired=True)` – get readable results fast.
+### 🔗 Fugue — Distributed Computation Without Rewrites
 
-### Automatically Visualize any dataset, any size with a single line of code
-https://github.com/AutoViML/AutoViz
+👉 [github.com/fugue-project/fugue](http://github.com/fugue-project/fugue)
 
-**Autoviz** 🖼️ Auto-plots your data to explore distributions and outliers.
+Fugue lets you mix SQL, Pandas, and Spark seamlessly.
 
-* Key perk: Fire-and-forget for quick overviews from CSV or dataframe.  
-* Tip: `AV.AutoViz("your_data.csv")` – instant visuals, no setup.
+* **Perk:** Run the same code locally or on Spark without changes.
+* **Try:**
 
-### bamboolib - a GUI for pandas
-https://bamboolib.8080labs.com
+  ```python
+  transform(df, custom_logic)
+  ```
 
-**Bamboolib** 🖱️ GUI for Pandas in Jupyter – drag/drop like Excel, but generates code.
+---
 
-* Key perk: No typing for data tweaks; great for teams or quick edits.  
-* Tip: `import bamboolib as bam` – click to build, code appears automatically.
+### 📈 Sweetviz — Instant Data Reports
+
+👉 [github.com/fbdesignpro/sweetviz](https://github.com/fbdesignpro/sweetviz)
+
+Sweetviz creates interactive HTML reports for fast dataset comparisons.
+
+* **Perk:** Visualizes differences between train/test or before/after datasets.
+* **Try:**
+
+  ```python
+  sweetviz.compare([df_train, "Train"], [df_test, "Test"])
+  ```
+
+---
+
+### 🎥 Ipyvizzu — Animated Charts in Jupyter
+
+👉 [ipyvizzu.vizzuhq.com](https://ipyvizzu.vizzuhq.com)
+
+Ipyvizzu brings storytelling flair to your notebooks with animations.
+
+* **Perk:** Animate data over time to make presentations pop.
+* **Try:**
+
+  ```python
+  chart.animate(Config({"x": "year", "y": "sales"}))
+  ```
+
+---
+
+### 🔍 Lux — Auto-Generated Visual Insights
+
+👉 [github.com/lux-org/lux](https://github.com/lux-org/lux)
+
+Lux automatically suggests smart visualizations as you explore dataframes.
+
+* **Perk:** Just display your `df` in a notebook — Lux does the rest.
+* **Try:**
+
+  ```python
+  df  # Lux magic activates automatically
+  ```
+
+---
+
+### 📉 Pingouin — Easy Statistical Tests
+
+👉 [pingouin-stats.org](https://pingouin-stats.org/index.html)
+
+Pingouin simplifies t-tests, ANOVAs, and more with clean tables.
+
+* **Perk:** Cleaner and more unified than `scipy`.
+* **Try:**
+
+  ```python
+  pg.ttest(dv1, dv2, paired=True)
+  ```
+
+---
+
+### 🖼️ AutoViz — One-Line Data Visualization
+
+👉 [github.com/AutoViML/AutoViz](https://github.com/AutoViML/AutoViz)
+
+AutoViz automatically plots distributions and outliers from any dataset.
+
+* **Perk:** Instant visual overviews from CSVs or DataFrames.
+* **Try:**
+
+  ```python
+  AV.AutoViz("your_data.csv")
+  ```
+
+---
+
+### 🖱️ Bamboolib — GUI for Pandas
+
+👉 [bamboolib.8080labs.com](https://bamboolib.8080labs.com)
+
+Bamboolib gives you a drag-and-drop interface for Pandas inside Jupyter.
+
+* **Perk:** No typing — make edits visually and it writes the code for you.
+* **Try:**
+
+  ```python
+  import bamboolib as bam
+  ```
 
 <br>
