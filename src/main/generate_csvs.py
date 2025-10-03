@@ -12,7 +12,7 @@ data = pd.DataFrame(
         "useless_col": ["junk", "junk", "junk", "junk"],
     }
 )
-data.to_csv("data.csv", index=False)
+data.to_csv("../../data/data.csv", index=False)
 
 # your_data.csv (for Dabl, Ipyvizzu, Lux, Autoviz, Bamboolib): Simple sales data
 your_data = pd.DataFrame(
@@ -22,13 +22,13 @@ your_data = pd.DataFrame(
         "category": ["A", "B", "A", "B"],
     }
 )
-your_data.to_csv("your_data.csv", index=False)
+your_data.to_csv("../../data/your_data.csv", index=False)
 
 # bigfile.csv (for Vaex): Larger dataset (1000 rows) with x/y
 big_data = pd.DataFrame(
     {"x": np.random.randint(0, 100, 1000), "y": np.random.normal(50, 10, 1000)}
 )
-big_data.to_csv("bigfile.csv", index=False)
+big_data.to_csv("../../data/bigfile.csv", index=False)
 
 # train_data.csv and test_data.csv (for Sweetviz): Simple train/test split simulation
 train_data = pd.DataFrame(
@@ -39,7 +39,7 @@ train_data = pd.DataFrame(
     }
 )
 test_data = train_data.sample(100)  # Subset for test
-train_data.to_csv("train_data.csv", index=False)
-test_data.to_csv("test_data.csv", index=False)
+train_data.to_csv("../../data/train_data.csv", index=False)
+test_data.to_csv("../../data/test_data.csv", index=False)
 
 print("All CSV files generated: data.csv, your_data.csv, bigfile.csv, train_data.csv, test_data.csv")

@@ -1,7 +1,7 @@
 import pandas as pd
 from fugue import transform
 
-df = pd.read_csv("data/data.csv")
+df = pd.read_csv("../../data/data.csv")
 
 
 def custom_logic(df: pd.DataFrame) -> pd.DataFrame:
