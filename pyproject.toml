@@ -1,7 +1,7 @@
 [project]
 name = "explore-all-the-libs"
 version = "0.1.0"
-description = "Add your description here"
+description = "Python Libraries That Handle Big Data and Visualization"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
