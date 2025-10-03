@@ -1,3 +1,4 @@
+# Datashader - Visualize Billions of Points Without Melting
 # Mercy me! We're about to shade data faster than kudzu spreads in Georgia!
 import datashader as ds
 import datashader.transfer_functions as tf
