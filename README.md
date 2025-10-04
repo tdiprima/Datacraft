@@ -4,36 +4,6 @@ A curated list of Python tools that make working with Pandas and large datasets 
 
 ---
 
-### 🧹 PyJanitor — Clean Pandas DataFrames Effortlessly
-
-👉 [github.com/pyjanitor-devs/pyjanitor](https://github.com/pyjanitor-devs/pyjanitor)
-
-PyJanitor extends Pandas with a simple, chainable API for cleaning messy data.
-
-* **Perk:** Rename columns, drop empties, or filter with one-liners.
-* **Try:**
-
-  ```python
-  df.clean_names().remove_empty()
-  ```
-
----
-
-### 📊 Dabl — Baseline Data Analysis
-
-👉 [github.com/dabl/dabl](https://github.com/dabl/dabl)
-
-Dabl automates exploratory data analysis and quick modeling.
-
-* **Perk:** Generates plots, preps data, and suggests models instantly.
-* **Try:**
-
-  ```python
-  dabl.plot(df, target_col)
-  ```
-
----
-
 ### ⚡ Vaex — Out-of-Core DataFrames for Big Data
 
 👉 [github.com/vaexio/vaex](https://www.github.com/vaexio/vaex)
@@ -80,36 +50,6 @@ Sweetviz creates interactive HTML reports for fast dataset comparisons.
 
 ---
 
-### 🎥 Ipyvizzu — Animated Charts in Jupyter
-
-👉 [ipyvizzu.vizzuhq.com](https://ipyvizzu.vizzuhq.com)
-
-Ipyvizzu brings storytelling flair to your notebooks with animations.
-
-* **Perk:** Animate data over time to make presentations pop.
-* **Try:**
-
-  ```python
-  chart.animate(Config({"x": "year", "y": "sales"}))
-  ```
-
----
-
-### 🔍 Lux — Auto-Generated Visual Insights
-
-👉 [github.com/lux-org/lux](https://github.com/lux-org/lux)
-
-Lux automatically suggests smart visualizations as you explore dataframes.
-
-* **Perk:** Just display your `df` in a notebook — Lux does the rest.
-* **Try:**
-
-  ```python
-  df  # Lux magic activates automatically
-  ```
-
----
-
 ### 📉 Pingouin — Easy Statistical Tests
 
 👉 [pingouin-stats.org](https://pingouin-stats.org/index.html)
@@ -136,21 +76,6 @@ AutoViz automatically plots distributions and outliers from any dataset.
 
   ```python
   AV.AutoViz("your_data.csv")
-  ```
-
----
-
-### 🖱️ Bamboolib — GUI for Pandas
-
-👉 [bamboolib.8080labs.com](https://bamboolib.8080labs.com)
-
-Bamboolib gives you a drag-and-drop interface for Pandas inside Jupyter.
-
-* **Perk:** No typing — make edits visually and it writes the code for you.
-* **Try:**
-
-  ```python
-  import bamboolib as bam
   ```
 
 <br>
