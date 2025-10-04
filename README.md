@@ -1,6 +1,6 @@
-## 🧰 Handy Python Libraries for Data Cleaning & Exploration
+## 🧰 Handy Python Libraries for Data Exploration
 
-A curated list of Python tools that make working with Pandas and large datasets way easier — whether you're cleaning messy data, doing quick EDA, or scaling up to big data.
+A curated list of Python tools that make working with Pandas and large datasets way easier — whether you're doing quick EDA or scaling up to big data.
 
 ---
 
@@ -72,10 +72,88 @@ Pingouin simplifies t-tests, ANOVAs, and more with clean tables.
 AutoViz automatically plots distributions and outliers from any dataset.
 
 * **Perk:** Instant visual overviews from CSVs or DataFrames.
+* **I tried it:** It removed the sales column, thinking that it wasn't important!  Will not use.
+
+---
+
+### 🎨 Datashader — Large-Scale Data Visualization
+
+👉 [datashader.org](https://datashader.org)
+
+Datashader renders massive datasets (millions+ points) into beautiful, interactive visualizations.
+
+* **Perk:** No overplotting or performance issues with huge point clouds.
 * **Try:**
 
   ```python
-  AV.AutoViz("your_data.csv")
+  import datashader as ds
+  cvs = ds.Canvas(plot_width=800, plot_height=600)
+  agg = cvs.points(df, 'x', 'y')
+  ```
+
+---
+
+### 🎵 JoyPy — Ridgeline Plots Made Easy
+
+👉 [github.com/leotac/joypy](https://github.com/leotac/joypy)
+
+JoyPy creates beautiful ridgeline plots (stacked density curves) for comparing distributions.
+
+* **Perk:** Perfect for showing distributions across groups or time periods.
+* **Try:**
+
+  ```python
+  import joypy
+  joypy.joyplot(df, by='category', column='value')
+  ```
+
+---
+
+### 📊 Plotting — Simple Statistical Plots
+
+👉 [github.com/hahnbeelee/plotting](https://github.com/hahnbeelee/plotting)
+
+Plotting provides one-liner functions for common statistical visualizations.
+
+* **Perk:** Quick statistical plots without matplotlib boilerplate.
+* **Try:**
+
+  ```python
+  from plotting import histogram, scatterplot
+  histogram(data, bins=20)
+  ```
+
+---
+
+### ⭕ Pycirclize — Circular Genome-Style Plots
+
+👉 [github.com/moshi4/pycirclize](https://github.com/moshi4/pycirclize)
+
+Pycirclize creates circular plots inspired by genomics visualizations.
+
+* **Perk:** Unique circular layouts for hierarchical or cyclical data.
+* **Try:**
+
+  ```python
+  from pycirclize import Circos
+  circos = Circos(sectors={"A": 10, "B": 15, "C": 12})
+  ```
+
+---
+
+### 🧇 PyWaffle — Waffle Charts in Python
+
+👉 [github.com/gyli/PyWaffle](https://github.com/gyli/PyWaffle)
+
+PyWaffle creates waffle charts (square pie charts) for intuitive proportion visualization.
+
+* **Perk:** More readable than pie charts for showing parts of a whole.
+* **Try:**
+
+  ```python
+  import matplotlib.pyplot as plt
+  from pywaffle import Waffle
+  plt.figure(FigureClass=Waffle, rows=5, values=[30, 16, 4])
   ```
 
 <br>
