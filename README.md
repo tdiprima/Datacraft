@@ -109,22 +109,6 @@ JoyPy creates beautiful ridgeline plots (stacked density curves) for comparing d
 
 ---
 
-### 📊 Plotting — Simple Statistical Plots
-
-👉 [github.com/hahnbeelee/plotting](https://github.com/hahnbeelee/plotting)
-
-Plotting provides one-liner functions for common statistical visualizations.
-
-* **Perk:** Quick statistical plots without matplotlib boilerplate.
-* **Try:**
-
-  ```python
-  from plotting import histogram, scatterplot
-  histogram(data, bins=20)
-  ```
-
----
-
 ### ⭕ Pycirclize — Circular Genome-Style Plots
 
 👉 [github.com/moshi4/pycirclize](https://github.com/moshi4/pycirclize)
@@ -155,5 +139,7 @@ PyWaffle creates waffle charts (square pie charts) for intuitive proportion visu
   from pywaffle import Waffle
   plt.figure(FigureClass=Waffle, rows=5, values=[30, 16, 4])
   ```
+
+&mdash; *README written by: claude-sonnet-4-20250514, gpt-5, and me*
 
 <br>
