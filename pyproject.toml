@@ -5,25 +5,16 @@ description = "Python Libraries That Handle Big Data and Visualization"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "autoviz",
-    "bamboolib",
-    "blaze>=0.10.1",
-    "dabl",
     "datashader>=0.17.0",
     "fugue",
-    "ipyvizzu",
     "joypy>=0.2.6",
-    "lux-api",
     "matplotlib>=3.7.4",
     "numpy>=1.23.5",
     "pandas",
     "pingouin",
     "plotnine>=0.12.4",
     "pycirclize>=1.9.1",
-    "pyjanitor",
     "pywaffle>=1.1.1",
-    "sankeyview>=1.1.8",
     "sweetviz",
     "vaex",
-    "weave>=0.51.56",
 ]
