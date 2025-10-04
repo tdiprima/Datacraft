@@ -1,5 +1,5 @@
 [project]
-name = "python-data-pantry"
+name = "Datacraft"
 version = "0.1.0"
 description = "Python Libraries That Handle Big Data and Visualization"
 readme = "README.md"
