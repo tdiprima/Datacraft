@@ -72,7 +72,7 @@ Pingouin simplifies t-tests, ANOVAs, and more with clean tables.
 AutoViz automatically plots distributions and outliers from any dataset.
 
 * **Perk:** Instant visual overviews from CSVs or DataFrames.
-* **I tried it:** It removed the sales column, thinking that it wasn't important!  Will not use.
+* **I tried it:** It removed the sales column, thinking that it wasn't important!  Will not use. ❌
 
 ---
 
