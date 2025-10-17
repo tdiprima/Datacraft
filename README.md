@@ -140,6 +140,22 @@ PyWaffle creates waffle charts (square pie charts) for intuitive proportion visu
   plt.figure(FigureClass=Waffle, rows=5, values=[30, 16, 4])
   ```
 
-&mdash; *README written by: claude-sonnet-4-20250514, gpt-5, and me*
+---
+
+### 🧹 PyJanitor — Clean Data with Method Chaining
+
+👉 [github.com/pyjanitor-devs/pyjanitor](https://github.com/pyjanitor-devs/pyjanitor)
+
+PyJanitor extends Pandas with convenient methods for data cleaning and preprocessing.
+
+* **Perk:** Chainable API makes data cleaning pipelines readable and maintainable.
+* **Try:**
+
+  ```python
+  import janitor
+  df.clean_names().remove_empty().coalesce(['col1', 'col2'])
+  ```
+
+For more details, refer to the pyjanitor documentation: https://pyjanitor-devs.github.io/pyjanitor/
 
 <br>
