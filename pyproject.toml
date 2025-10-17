@@ -17,5 +17,5 @@ dependencies = [
     "pywaffle>=1.1.1",
     "sweetviz==2.3.1",
     "vaex==4.17.0",
-    "pyjanitor==0.31.0",
+    "pyjanitor>=0.31.0",
 ]
